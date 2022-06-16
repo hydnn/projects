@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int number1, number2, f,sum,sub,mul,div;
+	
+	cout << "enter the first number : "; cin >> number1;
+	cout << "enter the second number : "; cin >> number2;
+	cout << endl;
+	cout << "please select an operation" << endl;
+	cout << "1- addition \t\t" << "2- subtraction" << endl;
+	cout << "3- multiplication \t" << "4- division" << endl;
+	cout << endl;
+	cout << "selected operation : "; cin >> f;
+
+	switch (f)
+	{
+	case 1: 
+		sum = number1 + number2;
+		cout << "the result : " << sum << endl;;
+		break;
+	case 2:
+		sub;
+		if (number1 < number2) {
+			sub = number2 - number1;
+		}
+		else {
+			 sub = number1 - number2;
+		}
+		cout << "the result : " << sub << endl;
+		break;
+	case 3:
+		mul = number1 * number2;
+		cout << "the result : " << mul << endl;
+		break;
+	case 4:
+		div = number1 / number2;
+		cout << "the result : " << div << endl;
+		break;
+	default:
+		cout << "!!! please select one above !!!" << endl;
+	}
+	return 0;
+}
